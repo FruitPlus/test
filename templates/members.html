@@ -1,0 +1,99 @@
+<ion-view title="会员信息" id="members">
+	<ion-content>
+		<div class="login">
+			<div class="msg">
+				<img src="img/member/login.png" alt="">
+				<p>点击登录</p>
+			</div>
+		</div>
+
+		<ion-list class="list-borderless">
+			<ion-item class="item-thumbnail-left item-icon-right loginIn">
+				<img src="img/member/login2.png" alt="">
+				<h3>微软雅黑22pt</h3>
+				<p>积分100</p>
+				<i class="icon ion-chevron-right"></i>
+			</ion-item>
+		</ion-list>
+		
+		<ion-list class="list-borderless theme">
+			<ion-item>
+				<h3>会员信息</h3>
+				<p>Member information</p>
+			</ion-item>
+		</ion-list>
+
+		<div class="row query">
+			<div class="col" ui-sref="tabs.personal">
+				<img src="img/member/member1.png" alt="">
+				<p>个人信息</p>
+			</div>
+			<div class="col" ui-sref="tabs.educational">
+				<img src="img/member/member2.png" alt="">
+				<p>教育信息</p>
+			</div>
+			<div class="col" ui-sref="tabs.career">
+				<img src="img/member/member3.png" alt="">
+				<p>职业信息</p>
+			</div>
+			<div class="col" ui-sref="tabs.document">
+				<img src="img/member/member4.png" alt="">
+				<p>证件信息</p>
+			</div>
+		</div>
+
+		<ion-list class="list-borderless  theme">
+			<ion-item style="margin-top:20px;">
+				<h3>合同信息</h3>
+				<p>Contract information</p>
+			</ion-item>
+		</ion-list>
+
+		<div class="row query">
+			<div class="col" ui-sref="tabs.leaseContract">
+				<img src="img/member/member5.png" alt="">
+				<p>租赁合同</p>
+			</div>
+			<div class="col" ui-sref="tabs.additional">
+				<img src="img/member/member6.png" alt="">
+				<p>附加协议</p>
+			</div>
+			<div class="col" ui-sref="tabs.tenantCode">
+				<img src="img/member/member7.png" alt="">
+				<p>租客守则</p>
+			</div>
+			<div class="col" ui-sref="tabs.priceList">
+				<img src="img/member/member8.png" alt="">
+				<p>服务价目表</p>
+			</div>
+		</div>
+
+		<ion-list class="list-borderless  theme">
+			<ion-item style="margin-top:20px;">
+				<h3>豌豆信息</h3>
+				<p>pea information</p>
+			</ion-item>
+		</ion-list>
+
+		<ion-list class="list-borderless hasService">
+			<ion-item class="item-thumbnail-left">
+				<img src="img/selfService/hasService1.png" alt="">
+				<h3 style="margin-top:10px;">服务类型：报修-已完工</h3>
+				<h3>申请时间：2016-06-24 09:49</h3>
+				<p>申请内容：马桶坏了,请及时处理</p>
+			</ion-item>
+			<ion-item class="item-thumbnail-left">
+				<img src="img/selfService/hasService2.png" alt="">
+				<h3 style="margin-top:10px;">服务类型：报修-已完工</h3>
+				<h3>申请时间：2016-06-24 09:49</h3>
+				<p>申请内容：马桶坏了,请及时处理</p>
+			</ion-item>
+			<!-- <ion-item class="item-thumbnail-left" mng-repeat="item in items">
+				<img ng-src="{{item.image}}" alt="">
+				<h3 style="margin-top:10px;">服务类型：{{item.job}}-{{item.anarchy}}</h3>
+				<h3>申请时间：{{item.time}}</h3>
+				<p>申请内容：{{item.content}}</p>
+			</ion-item> -->
+		</ion-list>
+	</ion-content>
+</ion-view>

@@ -1,0 +1,64 @@
+<ion-view title="豌豆首页" id="peasIndex">
+	<ion-content>
+
+	<ion-list class="list-borderless  theme">
+		<ion-item>
+			<h3>消息推荐</h3>
+			<p>Message recommendation</p>
+		</ion-item>
+	</ion-list>
+	
+	<!-- <ion-slide-box does-continue="true" auto-play="true" show-pager="true" slide-interval="3000"> //有数据的话用这个
+        <ion-slide ng-repeat="image in images">
+            <img ng-src="{{image.image}}" alt="图片">
+        </ion-slide>
+    </ion-slide-box> -->
+    <ion-slide-box does-continue="true" auto-play="true" show-pager="true" slide-interval="3000">
+        <ion-slide>
+            <img src="img/slide.png">
+        </ion-slide>
+         <ion-slide>
+            <img src="img/slide.png">
+        </ion-slide>
+         <ion-slide>
+            <img src="img/slide.png">
+        </ion-slide>
+    </ion-slide-box>
+	
+	<ion-list class="list-borderless  theme">
+		<ion-item>
+			<h3>物业公告</h3>
+			<p>Property announcement</p>
+		</ion-item>
+	</ion-list>
+
+	<ion-list class="list-borderless ">
+		<ion-item class="Water-supply">
+			<h3>停水通知</h3>
+			<p>由于小区下水道不正常,正在修改。<br/>2016-06-30号开始小区将会停水停电，过程中的不便请大家谅解。</p>
+		</ion-item>
+	</ion-list>
+	
+	<ion-list class="list-borderless  theme">
+		<ion-item>
+			<h3>快速支付</h3>
+			<p>Quick payment</p>
+		</ion-item>
+	</ion-list>
+
+	<div class="row quickPay">
+		<div class="col col-33" ui-sref="tabs.payment">
+			<img src="img/quickpay1.jpg" alt="">
+			<p>付款</p>
+		</div>
+		<div class="col col-33" ui-sref="tabs.electricity">
+			<img src="img/quickpay2.jpg" alt="">
+			<p>电费充值</p>
+		</div>
+		<div class="col col-33" ui-sref="tabs.water">
+			<img src="img/quickpay3.jpg" alt="">
+			<p>水费充值</p>
+		</div>
+	</div>
+	</ion-content>
+</ion-view>

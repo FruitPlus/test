@@ -1,0 +1,119 @@
+<ion-view title="自助服务" id="selfService" hide-tabs>
+	<ion-content>
+		<ion-list class="list-borderless  theme">
+			<ion-item>
+				<h3>自助查询</h3>
+				<p>Self service query</p>
+			</ion-item>
+		</ion-list>
+
+		<div class="row query">
+			<div class="col" ui-sref="tabs.paymentPlan">
+				<img src="img/selfService/query1.jpg" alt="">
+				<p>付款计划</p>
+			</div>
+			<div class="col" ui-sref="tabs.paybills">
+				<img src="img/selfService/query2.jpg" alt="">
+				<p>已付账单查询</p>
+			</div>
+			<div class="col" ui-sref="tabs.WandE">
+				<img src="img/selfService/query3.jpg" alt="">
+				<p>用电查询</p>
+			</div>
+			<div class="col" ui-sref="tabs.checkOutCheck">
+				<img src="img/selfService/query4.jpg" alt="">
+				<p>退房结算查询</p>
+			</div>
+		</div>
+
+		<ion-list class="list-borderless  theme">
+			<ion-item style="margin-top:20px;">
+				<h3>自助服务</h3>
+				<p>Self-service</p>
+			</ion-item>
+		</ion-list>
+		
+		<div class="row query">
+			<div class="col" ui-sref="tabs.electricity">
+				<img src="img/selfService/service1.png" alt="">
+				<p>电费充值</p>
+			</div>
+			<div class="col" ui-sref="tabs.water">
+				<img src="img/selfService/service2.png" alt="">
+				<p>水费充值</p>
+			</div>
+			<div class="col" ui-sref="tabs.payment">
+				<img src="img/selfService/service3.png" alt="">
+				<p>付款</p>
+			</div>
+			<div class="col" ui-sref="tabs.repair">
+				<img src="img/selfService/service4.png" alt="">
+				<p>报修</p>
+			</div>
+		</div>
+
+		<div class="row query" style="margin-top:32px;">
+			<div class="col" ui-sref="tabs.checkOut">
+				<img src="img/selfService/service5.png" alt="">
+				<p>申请退房</p>
+			</div>
+			<div class="col" ui-sref="tabs.sublet">
+				<img src="img/selfService/service6.png" alt="">
+				<p>申请转租</p>
+			</div>
+			<div class="col" ui-sref="tabs.reportCard">
+				<img src="img/selfService/service7.png" alt="">
+				<p>门卡挂失</p>
+			</div>
+			<div class="col" ui-sref="tabs.complaint">
+				<img src="img/selfService/service8.png" alt="">
+				<p>网上投诉</p>
+			</div>
+		</div>
+
+		<div class="row query last-query" style="margin-top:32px;">
+			<div class="col">
+				<img src="img/selfService/service9.png" alt="">
+				<p>服务评价</p>
+			</div>
+			<div class="col">
+				
+			</div>
+			<div class="col">
+				
+			</div>
+			<div class="col">
+				
+			</div>
+		</div>
+
+
+		<ion-list class="list-borderless  theme">
+			<ion-item style="margin-top:20px;">
+				<h3>已申请服务清单</h3>
+				<p>Service list has been applied</p>
+			</ion-item>
+		</ion-list>
+
+		<ion-list class="list-borderless hasService">
+			<ion-item class="item-thumbnail-left">
+				<img src="img/selfService/hasService1.png" alt="">
+				<h3 style="margin-top:10px;">服务类型：报修-已完工</h3>
+				<h3>申请时间：2016-06-24 09:49</h3>
+				<p>申请内容：马桶坏了,请及时处理</p>
+			</ion-item>
+			<ion-item class="item-thumbnail-left">
+				<img src="img/selfService/hasService2.png" alt="">
+				<h3 style="margin-top:10px;">服务类型：报修-已完工</h3>
+				<h3>申请时间：2016-06-24 09:49</h3>
+				<p>申请内容：马桶坏了,请及时处理</p>
+			</ion-item>
+			<!-- <ion-item class="item-thumbnail-left" mng-repeat="item in items">
+				<img ng-src="{{item.image}}" alt="">
+				<h3 style="margin-top:10px;">服务类型：{{item.job}}-{{item.anarchy}}</h3>
+				<h3>申请时间：{{item.time}}</h3>
+				<p>申请内容：{{item.content}}</p>
+			</ion-item> -->
+		</ion-list>
+	</ion-content>
+</ion-view>
