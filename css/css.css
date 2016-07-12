@@ -10,49 +10,49 @@
   height: 50px;
   margin-top: 6px;
 }
-.tab-item .icon.ion-information-circled {
+.tab-item .icon-01 {
   color: transparent;
   background: url(../img/02.png) no-repeat;
   background-size: contain;
   background-position: center;
 }
-.tab-item .icon.ion-help {
+.tab-item .icon-02 {
   color: transparent;
   background: url(../img/01.png) no-repeat;
   background-size: contain;
   background-position: center;
 }
-.tab-item .icon.ion-backspace-outline {
+.tab-item .icon-04 {
   color: transparent;
   background: url(../img/03.png) no-repeat;
   background-size: contain;
   background-position: center;
 }
-.tab-item .icon.ion-help-circled {
+.tab-item .icon-03 {
   color: transparent;
   background: url(../img/04.png) no-repeat;
   background-size: contain;
   background-position: center;
 }
-.tab-item .icon.ion-help-buoy {
+.tab-item .icon-06 {
   color: transparent;
   background: url(../img/05.png) no-repeat;
   background-size: contain;
   background-position: center;
 }
-.tab-item .icon.ion-backspace {
+.tab-item .icon-05 {
   color: transparent;
   background: url(../img/06.png) no-repeat;
   background-size: contain;
   background-position: center;
 }
-.tab-item .icon.ion-alert {
+.tab-item .icon-08 {
   color: transparent;
   background: url(../img/07.png) no-repeat;
   background-size: contain;
   background-position: center;
 }
-.tab-item .icon.ion-asterisk {
+.tab-item .icon-07 {
   color: transparent;
   background: url(../img/08.png) no-repeat;
   background-size: contain;
@@ -63,6 +63,9 @@
 }
 .bar-balanced .button.button-icon {
   font-size: 14px;
+}
+.img-opacity {
+  opacity: 0.75;
 }
 .theme h3 {
   font-size: 20px;
@@ -145,8 +148,8 @@
   text-overflow: clip;
 }
 .query .col {
-  padding: 0 15px 0px;
-
+  padding: 0 15px 10px;
+  height: auto;
   position: relative;
   border-right: 2px solid #d5d4d2;
 }
@@ -155,14 +158,13 @@
 }
 .query .col img {
   width: 100%;
-opacity:.75;
 }
 .query .col p {
   font-size: 12px;
   color: #2bc42b;
   position: absolute;
   left: 0;
-  bottom: -30px;
+  bottom: -15px;
   width: 100%;
   text-align: center;
 }
@@ -175,9 +177,6 @@ opacity:.75;
 .hasService .item {
   margin-left: 16px;
   border-bottom: 3px solid #b2aead;
-}
-.hasService .item img{
-  opacity:.75
 }
 .hasService .item:last-child {
   border-bottom: 0;
@@ -195,9 +194,6 @@ opacity:.75;
 }
 #members .loginIn h3 {
   margin-top: 26px;
-}
-#members .loginIn img{
-  opacity:.75
 }
 #repair .item-input,
 #electricity .item-input,
@@ -219,7 +215,7 @@ opacity:.75;
 #water .item-input textarea {
   padding-top: 12px;
 }
-#repairSubmit {
+.bigSubmit {
   font-size: 20px;
   width: 208px;
   background: #ffff01;
@@ -231,11 +227,15 @@ opacity:.75;
   margin: 80px auto 0;
   color: #000;
 }
+.submitMargin {
+  margin-top: 20px !important;
+  margin-bottom: 80px !important;
+}
 .tips {
   font-size: 12px;
   color: #919191;
   text-align: center;
-  margin: 30px 0 50px 0;
+  margin: 15px 0 50px 0;
 }
 #electricitySubmit,
 #paymentSubmit {
