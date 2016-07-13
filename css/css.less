@@ -173,12 +173,17 @@
 
 
 // repair
-#repair .item-input,#electricity .item-input,#payment .item-input,#reportCard .item-input,#checkOut .item-input,#sublet .item-input,#water .item-input{
+#repair .item-input,#electricity .item-input,#payment .item-input,#reportCard .item-input,#checkOut .item-input,#sublet .item-input,#water .item-input,#complaint .item-input{
 	padding-right: 0;
 	margin-left: 16px;
+	margin-right: 16px;
 	border-bottom: 2px solid #ccc;
+	&:last-child{
+		border-bottom: 1px solid #ccc;
+	}
 	textarea{
 		padding-top: 12px;
+		margin-right: 30px;
 	}
 
 }
@@ -194,9 +199,26 @@
 	margin: 80px auto 0;
 	color: #000;
 }
+.readonly{
+	// background: #fff !important;
+	font-size: 15px;
+}
+.readonly-background{
+	background:  #f8f8f8;
+}
+.member-readonly{
+	display: inline-block;
+	width: 58%;
+	color: #000 !important;
+	font-size: 14px;
+	font-weight: bold;
+	text-align: right;
+}
 .submitMargin{
 	margin-top: 20px !important;
 	margin-bottom: 80px !important;
+	margin-left: 32px;
+	margin-right: 32px;
 }
 // end repair
 
@@ -207,17 +229,15 @@
 	text-align: center;
 	margin: 15px 0 50px 0;
 }
-#electricitySubmit,#paymentSubmit{
+#electricitySubmit,#paymentSubmit,#waterSubmit{
 	font-size: 17px;
-	width: 102px;
-	background: #ffff01;
+
 	display: block;
 	text-align: center;
 	border-radius: 10px;
-	border: 3px solid #000;
-	font-weight: bold;
-	margin: 35px auto 0;
-	color: #000;
+
+	margin: 35px 32px 0;
+
 }
 
 // end electricity
@@ -283,6 +303,21 @@
 
 // additional
 .additionalList{
+	.item-textarea{
+		height: auto;
+		padding-right: 32px;
+	}
+	.textarea-align{
+		// padding-top: 12px;
+		white-space:pre-wrap;
+		color: #000 !important;
+		display: inline-block;
+		width: 100%;
+		text-align: left;
+	}
+	.box-span{
+		float: right;
+	}
 	span{
 		color: #929292;
 		font-size: 14px;
