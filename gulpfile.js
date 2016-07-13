@@ -22,7 +22,7 @@ var less = require('gulp-less');
 gulp.task('less', function () {
   return gulp.src('./css/*.less')
     .pipe(less())
-    .pipe(gulp.dest('./css/css'))
+    .pipe(gulp.dest('./css'))
 
 });
 
@@ -67,7 +67,7 @@ gulp.task('serve', ['less'],function() {
 
     // gulp.watch('src/img/*',['imagemin']).on('change',reload)
     // gulp.watch('src/js/*.js',['script']).on('change',reload)
-    gulp.watch('src/style/*.less',['less']).on('change',reload)
-    // gulp.watch('src/*.html',['html']).on('change',browserSync.reload)
+    gulp.watch('./css/*.less',['less']).on('change',reload)
+    gulp.watch('templates/**/*.html').on('change',browserSync.reload)
 
 });
